@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     getData () {
-      axios.get('http://uinames.com/api/?ext&amount=25').then(response => {
+      axios.get('https://uinames.com/api/?ext&amount=25').then(response => {
         this.data = response.data
         this.setGroup()
       }).catch(e => {
